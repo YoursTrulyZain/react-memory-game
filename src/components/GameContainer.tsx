@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import GameCard from "./GameCard";
 import { AkatsukiCharacter, GameContainerProperties } from "../types";
 
