@@ -1,12 +1,15 @@
 import { ReactNode } from "react";
 
-export interface GameLayoutProperties {
-    children: [ReactNode, ReactNode]
+export interface GameContainerProperties {
+    characterArray: AkatsukiCharacter[]
 }
 
 export interface GameCardProperties {
+    id: number,
     image: string,
-    name: string
+    name: string,
+    setSelectedID: (id: number) => void,
+    setGameStarted: (state: boolean) => void;
 }
 
 export interface AkatsukiCharacter {

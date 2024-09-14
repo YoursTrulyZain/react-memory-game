@@ -2,3 +2,31 @@
     background-color: black;
     color: white;
 }
+
+.scoreContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardContainer {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.gameCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}

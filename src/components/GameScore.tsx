@@ -1,4 +1,4 @@
-function Score() {
+function GameScore() {
     return (
       <>
       <p>Current Score: {0}</p>
@@ -7,4 +7,4 @@ function Score() {
     )
 }
 
-export default Score
+export default GameScore

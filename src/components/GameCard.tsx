@@ -1,28 +1,16 @@
-import { CSSProperties } from "react"
 import { GameCardProperties } from "../types"
 
-function GameCard({image, name}: GameCardProperties) {
+function GameCard({id, image, name, setSelectedID, setGameStarted}: GameCardProperties) {
 
-    const gameCardStyles: CSSProperties = {
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        border: "5px solid white",
-        borderRadius: "5px"
-    }
-
-    const imageStyles: CSSProperties = {
-        height: "300px",
-        width: "300px"
+    function handleClick() {
+        setSelectedID(id);
+        setGameStarted(true);
     }
 
     return (
-        <div
-        style={gameCardStyles}>
-            <img
-            src={image}
-            style={imageStyles}></img>
+        <div className="gameCard"
+        onClick={handleClick}>
+            <img src={image}></img>
             <p>{name}</p>
         </div>
     )
